@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+    <style>
+        .row {
+            margin: 5px;
+        }
+        label {
+            display: inline-block;
+            text-align: right;
+            padding-right: 5px;
+        }
+        fieldset {
+            border-radius: 5px;
+            margin: 15px;
+        }
+        legend {
+            font-weight: bold;
+        }
+        h2 {
+            text-align: center;
+        }
+        input {
+            width: 100%;
+        }
+        select {
+            width: 100%;
+        }
+        #enviar {
+            width: 25%;
+        }
+        #resetar {
+            width: 25%;
+        }
+        .botoes {
+            text-align: center; 
+            padding-top: 10px;
+        }
+        .ajuda {
+            text-align: center; 
+            padding-top: 10px;          
+        }
+        .botao-ajuda{
+            font-size: 20px; 
+            padding: 15px 30px; 
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <h2><u>Formulario de Cadastro</u></h2>
+        <fieldset>
+            <legend>
+                Dados Pessoais
+            </legend>
+            <div class="row">
+                <label for="name">
+                    Nome:
+                </label>
+                <input type="text"
+                placeholder="Seu Nome">
+                <label for="name">
+                    Email:
+                </label>
+                <input type="email"
+                placeholder="email@exemplo.com.br">
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>
+                Dados Profissionais
+            </legend>
+                <div class="row">
+                    <label for="name">
+                        Empresa
+                    </label>
+                    <input type="text">
+                    <label for="name">
+                        Função
+                    </label>
+                    <input type="text">           
+                </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>
+                Endereço
+            </legend>
+                <div class="row">
+                    <label for="name">
+                        Rua
+                    </label>
+                    <input type="text">
+                    <label for="name">
+                        Bairro
+                    </label>
+                    <input type="text">  
+                    <label for="name">
+                        Cidade
+                    </label>
+                    <input type="text">  
+                   
+                </div>
+                    <div class="row">
+                    <label for="name">
+                        Estado
+                    </label>
+                   
+                    <select>
+                        <option value="">Selecione ...</option>
+                        <option value="AC">AC</option>
+                        <option value="AL">AL</option>
+                        <option value="AP">AP</option>
+                        <option value="AM">AM</option>
+                        <option value="BA">BA</option>
+                        <option value="CE">CE</option>
+                        <option value="DF">DF</option>
+                        <option value="ES">ES</option>
+                        <option value="GO">GO</option>
+                        <option value="MA">MA</option>
+                        <option value="MT">MT</option>
+                        <option value="MS">MS</option>
+                        <option value="MG">MG</option>
+                        <option value="PA">PA</option>
+                        <option value="PB">PB</option>
+                        <option value="PR">PR</option>
+                        <option value="PE">PE</option>
+                        <option value="PI">PI</option>
+                        <option value="RJ">RJ</option>
+                        <option value="RN">RN</option>
+                        <option value="RS">RS</option>
+                        <option value="RO">RO</option>
+                        <option value="RR">RR</option>
+                        <option value="SC">SC</option>
+                        <option value="SP">SP</option>
+                        <option value="SE">SE</option>
+                        <option value="TO">TO</option>
+                    </select>
+                    
+                </div>
+                <div class="row">
+                    <label for="name">
+                        Cep
+                    </label>
+                    <input type="text"
+                    placeholder="(ex) 00.000-00">    
+                </div>
+
+                <div class="botoes">
+                    <input id="enviar" type="submit">
+                    <input id="resetar" type="reset">
+                </div>
+        </fieldset>
+    </form>
+
+    <div class="ajuda">
+        <button class="botao-ajuda"> <a href="http://google.com.br"> Ajuda?</a></button>
+    </div>
+    
+</body>
+</html>
